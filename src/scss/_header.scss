@@ -1,0 +1,44 @@
+
+
+
+
+header {
+    position: absolute;
+    height: 13vh;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .nav-list {
+        ul {
+            list-style: none;
+            display: inline-block;
+
+            li {
+                margin-right: 1.5rem;
+                display: inline-block;
+                color:#fff;
+                font-size: $header-font-size;
+            }
+
+            
+
+        }
+
+    }
+
+
+    .logo {
+        img {
+            max-width: 15rem;
+        }
+    }
+}

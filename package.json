@@ -1,0 +1,20 @@
+{
+  "name": "code-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "babel-included-GULP.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.26.9"
+  }
+}

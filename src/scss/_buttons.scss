@@ -1,0 +1,104 @@
+
+
+
+
+.get-in-touch-button {
+    margin-top: 1.5rem;
+    width: 11rem;
+    height: 3rem;
+    border: none;
+    background: $dark-blue;
+    color:#fff;
+    font-weight: $thick-font-weight;
+    font-family:$main-font-family;
+    text-transform:uppercase;
+    font-size:1rem;
+    transition:background-color 0.1s linear;
+    transition:color 0.1s linear;
+}
+
+.get-in-touch-button:hover {
+    background-color:#fff;
+    color:$dark-blue;
+}
+
+.header-contact-button {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    background: transparent;
+    border: solid 2px #fff;
+    font-weight: $medium-font-weight;
+    font-size: $header-font-size;
+    font-family: $main-font-family;
+    padding: 10px 30px;
+    transition:background-color 0.1s linear;
+    transition:color 0.1s linear;
+}
+
+.header-contact-button:hover {
+    
+    color:$dark-blue;
+    background:#fff;
+}
+
+
+.sports-selector-button {
+   width: 11rem;
+   height: 3rem;
+   margin-left:auto;
+   margin-right:auto;
+   font-weight: $medium-font-weight;
+   font-family:$main-font-family;
+   text-transform:uppercase;
+   font-size:1rem;
+   border:none;
+   color:#fff;
+   background-color: $dark-blue;
+   transition:transform 0.1s linear;
+}
+
+.sports-selector-button:hover {
+    transform: scale(1.03);
+}
+
+.submit-button {
+    margin-top: 1rem;
+    width: 12rem;
+    height: 3rem;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: $medium-font-weight;
+    font-family:$main-font-family;
+    text-transform:uppercase;
+    font-size:1.2rem;
+    border:none;
+    color:#fff;
+    background-color: $light-coral;
+    transition:transform 0.1s linear;
+}
+
+.submit-button:hover {
+    transform: scale(1.03);
+}
+
+.newsletter-button {
+    
+    width: 10rem;
+    height: 2.8rem;
+    font-weight: $medium-font-weight;
+    font-family:$main-font-family;
+    text-transform:uppercase;
+    border:none;
+    color:#fff;
+    background-color: $light-coral;
+    
+    transition:color 0.1s linear;
+
+}
+
+.newsletter-button:hover {
+    
+    color:$dark-blue;
+}
+

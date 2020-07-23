@@ -1,0 +1,560 @@
+
+
+
+
+
+
+.hero-section {
+    background: #e5254a url('../images/home_banner-1.png');
+    background-size: cover;
+    background-position: 11.5vw 50%;
+    background-repeat: no-repeat;
+    padding-top: 13vh;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero-content {
+    margin-top: 5rem;
+    display: flex;
+    width: 50%;
+    margin-right: auto;
+    flex-direction: column;
+
+    h1 {
+        font-size: 5.5rem;
+        color: #fff;
+        flex: 0 0 50%;
+        text-transform: uppercase;
+        line-height:125%;
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: #fff;
+        margin-top: 1rem;
+        width: 80%;
+        font-weight:$medium-font-weight;
+    }
+
+    
+}
+
+.discover-card {
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    bottom: 0;
+    right: 0;
+    height: 5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    clip-path: polygon(26% 0, 100% 0%, 100% 100%, 0% 100%);
+
+    .discovery-arrow {
+        display: inline-block;
+        padding-left: 3rem;
+        margin-right:5px;
+        animation: discovery-pointing infinite 1.5s linear
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin: auto 0;
+        
+    }
+
+}
+
+
+
+
+//FOOTBALLING SECTION
+
+
+.footballing-flex {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .overlapping-image {
+     
+        flex: 0 0 50%;
+        margin-top: -1.2rem;
+        position: relative;
+        z-index: 9;
+        margin-bottom: -1.2rem;
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+
+    .footballing-content {
+        flex: 0 0 45%;
+        margin-left:1rem;
+        
+        
+
+        h2 {
+            font-size:1.8rem;
+            color:$dark-blue;
+            font-weight: $semibold-font-weight;
+            line-height:100%;
+            margin-bottom:1rem;
+            text-transform:uppercase;
+        }
+
+        p {
+            font-size:1.1rem;
+            font-weight: $medium-font-weight;
+
+            color:$dark-blue;
+
+        }
+    }
+
+
+}
+
+
+//ENGAGEMENT CARD SECTION 
+
+.engage-section {
+    background: $dark-blue;
+}
+
+.engage-content {
+    padding: $section-spacing; 
+    text-align:center;
+
+    
+
+    h1 {
+        margin: 0 1rem 2rem;
+        font-size:3rem;
+        color:#fff;
+        font-weight: $thick-font-weight;
+        text-transform:uppercase;
+    }
+
+    .engage-card-container {
+        display:flex;
+        justify-content: space-evenly;
+        width:90%;
+        margin:0 auto;
+        
+
+
+        .engage-card {
+            margin: 0 2rem 1rem 2rem;
+
+            h3 {
+                color:#fff;
+                font-size:1.4rem;
+                text-transform: uppercase;
+                width:80%;
+                line-height:100%;
+                margin: 1rem auto;
+                font-weight:$semibold-font-weight;
+            }
+
+            p {
+                color:#fff;
+                line-height:100%;
+            }
+        }
+    }
+}
+
+
+
+//SHADOW SPORTS SECTION
+
+.activities-section {
+    background:#fff;
+    padding:2rem 0 5rem;
+
+
+}
+
+.activities-content {
+    
+    h1 {
+        text-transform: uppercase;
+        color: $light-coral;
+        font-size: 4.5rem;
+        text-align:center;
+    }
+
+    p {
+        font-size:1.1rem;
+        color: $dark-blue;
+        line-height:120%;
+        width:50%;
+        margin: 0 auto;
+        text-align:center;
+        font-weight:$medium-font-weight;
+    }
+}
+
+
+.sports-cards-container {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin: 2rem 0;
+
+    .sport-card {
+         
+         position:relative;
+    }
+
+    .sport-card.lesser {
+      .backdrop {
+        width:10rem;
+      }
+
+      .sport {
+          position:absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          left:0;
+      }
+
+      .svg-sport {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          fill : $lesser-sport-shadow;
+      }
+    }
+
+    .sport-card.greater {
+        .backdrop {
+            width: 15rem;
+        }
+
+        .svg-sport {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            fill: $greater-sport-shadow;
+        }
+        
+    }
+}
+
+.sports-selector {
+   display:flex;
+   justify-content:space-between;
+   width:30%;
+   margin:2rem auto;
+
+   h2 {
+    font-size: 1.5rem;
+    color:$dark-blue;
+   }
+
+   .previous {
+       border-radius : 50%;
+       width:35px;
+       height:35px;
+       border: solid 2px $dark-blue;
+       position: relative;
+       display:flex;
+       justify-content: center;
+
+       img {
+           transform: rotate(90deg) translateY(1px);
+       }
+   }
+
+   .next {
+       border-radius: 50%;
+       width: 35px;
+       height: 35px;
+       border: solid 2px $dark-blue;
+       position: relative;
+       display: flex;
+       justify-content: center;
+
+       img {
+           transform: rotate(270deg) translateY(-1px);
+       }
+   }
+
+}
+
+.selector-button-holder {
+    text-align:center;    
+}
+
+
+
+// MEETING THE COACH SECTION 
+
+.meeting-section {
+    background-color:#fff;
+}
+
+.meeting-content {
+    background:$dark-blue;
+    display:flex;
+    justify-content: space-between;
+    flex: 0 0 50%;
+
+
+    .meeting-text {
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        margin: 4rem 2rem 5.5rem 4rem;
+
+        h2 {
+            font-size:4rem;
+            color:#fff;
+            font-weight:$semibold-font-weight;
+            line-height:120%;
+        }
+
+        h3 {
+            width:100%;
+            text-align:left;
+            margin:1rem 0;
+            font-size:1.5rem;
+            color:$light-coral;
+            line-height:120%;
+            font-weight:$medium-font-weight;
+        }
+
+        p {
+            font-size:1rem;
+            color:#fff;
+            line-height: 100%;
+        }
+    }
+
+
+    
+
+    .meeting-image {
+        flex: 0 0 50%;
+        overflow: hidden;
+        width:100%;
+        background:url('../images/SchoolSportPremium4@2x.png');
+        background-size:cover;
+
+    }
+}
+
+
+
+
+.contact-section {
+    background:#fff;
+    padding:4rem 0 5rem 0;
+}
+
+.form-intro {
+    margin-bottom:3rem;
+
+    h1 {
+        text-align:center;
+        font-size:5rem;
+        color:$light-coral;
+        font-weight:$semibold-font-weight;
+        line-height:100%;
+        
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        color:$dark-blue;
+        text-align:center;
+        font-weight:$semibold-font-weight;
+        line-height:100%;
+        margin: 2rem 0;
+        span {
+            color:$light-coral;
+        }
+    }
+
+    p {
+        width:50%;
+        margin: 0 auto;
+        color:$dark-blue;
+        font-size:1.1rem;
+    }
+}
+
+
+
+
+.form-container {
+
+    max-width:50%;
+    margin:0 auto;
+    form {
+
+        text-align:center;
+
+        .input-group {
+            display:flex;
+            justify-content: space-between;
+            width:100%;
+            input {
+                display:inline-block;
+                width:100%;
+                border: solid 1px $grey;
+                padding:20px ;
+                
+                margin-bottom:1rem;
+                font-size:1rem;
+                color:$dark-blue;
+                border-radius:2px;
+                font-family:$main-font-family;
+                font-weight:400;
+            }
+
+            input:first-child {
+                margin-right:1rem;
+            }
+
+            input::placeholder {
+                color:#707070;
+                text-transform:uppercase;
+                font-size:1rem;
+                font-family:$main-font-family;
+                font-weight:400;
+            }
+        }
+
+        .message-box {
+            width:100%;
+            height:6rem;
+            padding: 20px;
+            color:$dark-blue;
+            font-weight:400;
+            font-size:1rem;
+        }
+
+        .message-box::placeholder {
+            font-family:$main-font-family;
+        }
+
+
+        
+    }
+}
+
+
+//FOOTER SECTION 
+
+footer {
+    display:flex;
+    background-color:#fff;
+
+    .footer-logo {
+        flex: 0 0 20%;
+        img {
+            margin:auto;
+            display:block;
+            height:80%;
+            padding-top:0.5rem;
+        }
+    }
+
+    .footer-info {
+        flex: 0 0 80%;
+        background:$dark-blue;
+        padding:1rem 2rem 1rem 8rem;
+        display:flex;
+        justify-content: space-evenly;
+        clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+        .contact-info {
+            margin-right:1rem;
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+
+            h2 {
+                color:$light-coral;
+                font-weight:$medium-font-weight;
+                text-transform: uppercase;
+                font-size:1.4rem;
+            }
+            p {
+                text-transform:uppercase;
+                 color:#fff;
+                 line-height:120%;
+            }
+
+            .social-icons {
+                img {
+                    margin-right:1rem;
+                }
+            }
+
+        }
+
+
+        .newsletter-group {
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            h2 {
+                 color:$light-coral;
+                 font-weight:$medium-font-weight;
+                 text-transform: uppercase;
+                 font-size:1.4rem;
+               
+            }
+
+            form {
+                input {
+                    height:2.8rem;
+                    border-radius:0;
+                    border:none;
+                    width:50%;
+                    display:inline-block;
+                }
+
+            
+            }
+
+            .copyright {
+                display:flex;
+                p {
+                    color:#fff;
+                    display:inline-block;
+                    line-height:100%;
+                    font-size:0.8rem;
+                }
+
+                .links {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
