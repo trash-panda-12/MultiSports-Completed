@@ -444,7 +444,6 @@
                 width:100%;
                 border: solid 1px $grey;
                 padding:20px ;
-                
                 margin-bottom:1rem;
                 font-size:1rem;
                 color:$dark-blue;
@@ -467,6 +466,8 @@
         }
 
         .message-box {
+            border-radius:2px;
+            border: solid 1px $grey;
             width:100%;
             height:6rem;
             padding: 20px;
