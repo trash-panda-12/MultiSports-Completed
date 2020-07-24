@@ -284,6 +284,7 @@
        position: relative;
        display:flex;
        justify-content: center;
+       cursor:pointer;
 
        img {
            transform: rotate(90deg) translateY(1px);
@@ -298,6 +299,7 @@
        position: relative;
        display: flex;
        justify-content: center;
+       cursor:pointer;
 
        img {
            transform: rotate(270deg) translateY(-1px);
@@ -409,6 +411,13 @@
         margin: 0 auto;
         color:$dark-blue;
         font-size:1.1rem;
+    }
+
+    #call-and-email {
+        a{
+            text-decoration:none;
+            color:$dark-blue;
+        }
     }
 }
 

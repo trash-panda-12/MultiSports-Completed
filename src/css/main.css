@@ -315,6 +315,40 @@ footer .footer-info .newsletter-group .copyright .links {
             clip-path: none;
     flex: 0 0 100%;
     padding: 1.5rem;
+    align-items: center;
+  }
+  footer .footer-info .contact-info {
+    flex-wrap: wrap;
+  }
+  footer .footer-info .contact-info .details {
+    margin: 1rem 0;
+  }
+  footer .footer-info .newsletter-group .newsletter-signup {
+    margin: 1rem 0;
+  }
+  footer .footer-info .newsletter-group .newsletter-signup form input {
+    min-width: 150px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .footer-info {
+    flex-direction: column;
+  }
+  footer .footer-info .contact-info {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  footer .footer-info .contact-info .details {
+    margin: 1rem 0;
+  }
+  footer .footer-info .newsletter-group .newsletter-signup {
+    margin: 1rem 0;
+  }
+  footer .footer-info .newsletter-group .newsletter-signup form input {
+    min-width: 150px;
   }
 }
 .hero-section {
@@ -534,6 +568,7 @@ footer .footer-info .newsletter-group .copyright .links {
   position: relative;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .sports-selector .previous img {
   transform: rotate(90deg) translateY(1px);
@@ -546,6 +581,7 @@ footer .footer-info .newsletter-group .copyright .links {
   position: relative;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .sports-selector .next img {
   transform: rotate(270deg) translateY(-1px);
@@ -632,6 +668,10 @@ footer .footer-info .newsletter-group .copyright .links {
   margin: 0 auto;
   color: #0F385F;
   font-size: 1.1rem;
+}
+.form-intro #call-and-email a {
+  text-decoration: none;
+  color: #0F385F;
 }
 
 .form-container {
@@ -870,6 +910,7 @@ footer .footer-info .newsletter-group .copyright .links {
   .form-intro p {
     min-width: 300px;
     width: 80%;
+    text-align: center;
   }
 
   .form-container {
