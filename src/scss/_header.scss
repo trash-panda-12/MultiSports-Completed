@@ -62,4 +62,32 @@ header {
             max-width: 15rem;
         }
     }
+    
+}
+
+
+
+
+
+
+
+.burger-menu {
+  img {
+      height:20px;
+      width:30px;
+  }
+  display:none;
+}
+
+
+@media only screen and (max-width:700px) {
+    .burger-menu {
+        display: block;
+    }
+
+    header .nav-list {
+        ul, button {
+            display:none;
+        }
+    }
 }

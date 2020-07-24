@@ -2,14 +2,20 @@
 
 
 @media only screen and (max-width:1200px) {
+
+    //Hero Section
     .hero-content {
         h1 {
             font-size: 3.5rem;
         }
     }
 
-    .engage-card-container {
-        width: 100%;
+
+
+    .engage-content {
+        .engage-card-container {
+            width:100%;
+        }
     }
 
 

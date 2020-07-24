@@ -20,7 +20,7 @@ footer {
     }
 
     .footer-info {
-        flex: 0 0 80%;
+        flex: 0 1 80%;
         background: $dark-blue;
         padding: 1rem 2rem 1rem 8rem;
         display: flex;
@@ -101,4 +101,26 @@ footer {
         }
     }
 
+}
+
+
+
+@media only screen and (max-width: 970px) {
+
+
+    footer {
+        flex-direction: column;
+
+
+        .footer-logo {
+            margin:1rem 0;
+        }
+
+
+        .footer-info {
+            clip-path:none;
+            flex: 0 0 100%;
+            padding:1.5rem
+        }
+    }
 }

@@ -1,0 +1,87 @@
+
+
+
+@media only screen and (max-width:500px) {
+
+    .hero-section {
+        background-position: center;
+        position:relative
+    }
+
+    .hero-content {
+     width:80%;
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            line-height:130%;
+            font-size:1rem;
+        }
+    }
+
+    .hero-section::before {
+        content:'';
+        width:100%;
+        z-index:0;
+        height:100%;
+        background-color: rgba(0,0,0,0.2);
+        top:0;
+        left:0;
+        position:absolute;
+    }
+
+
+
+    .engage-content {
+
+        padding:2.5rem 0;
+        h1 {
+            font-size:2rem;
+        }
+    }
+
+
+    .activities-content {
+        h1 {
+            font-size:2rem;
+        }
+    }
+
+
+    .meeting-content {
+        .meeting-image {
+            min-width:270px;
+            width:100%;
+        }
+    }
+
+
+
+
+
+
+
+    .sports-cards-container {
+
+        .sport-card.lesser {
+            .backdrop {
+                max-width: 5rem;
+                min-width: 3rem;
+            }
+        }
+
+        .sport-card.greater {
+            .backdrop {
+                max-width: 8rem;
+
+            }
+        }
+    }
+
+
+
+
+
+
+}

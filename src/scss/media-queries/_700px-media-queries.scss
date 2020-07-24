@@ -1,0 +1,129 @@
+
+
+@media only screen and (max-width: 700px) {
+
+
+    .hero-section {
+        background-position: 2vw 50%;
+    }
+
+    .hero-content {
+        width:70%;
+        h1 {
+            font-size:2.5rem;
+        }
+    }
+
+
+
+
+    .footballing-flex {
+        flex-direction:column;
+        margin-top: 1rem;
+        margin-bottom:1rem;
+
+        .overlapping-image {
+            max-width:50%;
+            margin: 0;
+            
+            
+        }
+
+        
+    }
+
+
+
+
+    ///Activitiees Section 
+
+    .activities-content {
+        h1 {
+            font-size:2.5rem;
+        }
+
+        p {
+            font-size:0.9rem;
+        }
+    }
+
+    #first-card {
+        display:none;
+    }
+
+    #fifth-card {
+        display:none;
+    }
+
+
+
+
+//Sports card shaodws 
+
+.sports-cards-container {
+
+    .sport-card.lesser {
+        .backdrop {
+            max-width: 8rem;
+            min-width: 4rem;
+        }
+
+
+    }
+
+    .sport-card.greater {
+        .backdrop {
+            max-width: 12rem;
+
+        }
+
+
+    }
+}
+
+
+
+
+
+.form-intro {
+    h1 {
+        font-size:3rem;
+    }
+
+    h2 {
+        margin: 1rem 0;
+        font-size:1.3rem;
+    }
+
+    p {
+        min-width:300px;
+        width:80%;
+    }
+}
+
+
+.form-container {
+    min-width:300px;
+    max-width:90%;
+    margin: auto;
+    
+    form {
+        .input-group {
+            flex-direction:column;
+
+            input {
+                padding: 10px 20px;
+                
+            }
+
+            input:first-child {
+                margin-right:0;
+            }
+        }
+    }
+}
+
+
+
+
+}

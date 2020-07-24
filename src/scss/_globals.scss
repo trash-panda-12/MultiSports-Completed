@@ -26,8 +26,8 @@ button {
 .max-width-container {
     width: 90vw;
     max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    display:block;
+    margin:0 auto;
 }
 
 .max-width-margin {

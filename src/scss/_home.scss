@@ -10,12 +10,14 @@
     background-position: 11.5vw 50%;
     background-repeat: no-repeat;
     padding-top: 13vh;
-    padding-bottom: 5rem;;
+    padding-bottom: 2rem;
     min-height: 100vh;
     position: relative;
 }
 
 .hero-content {
+    z-index:1;
+    position:relative;
     margin-top: 5rem;
     display: flex;
     width: 50%;
@@ -48,6 +50,7 @@
     bottom: 0;
     right: 0;
     height: 5vw;
+    min-height:3rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -146,13 +149,18 @@
     .engage-card-container {
         display:flex;
         justify-content: space-evenly;
-        width:90%;
+        width:100%;
         margin:0 auto;
         
 
 
         .engage-card {
             margin: 0 2rem 1rem 2rem;
+
+            img {
+                width:60px;
+                height:60px;
+            }
 
             h3 {
                 color:#fff;
@@ -206,9 +214,10 @@
 
 .sports-cards-container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
     margin: 2rem 0;
+    max-width:1500px;
 
     .sport-card {
          
@@ -260,6 +269,7 @@
    justify-content:space-between;
    width:30%;
    margin:2rem auto;
+   min-width:250px;
 
    h2 {
     font-size: 1.5rem;
@@ -325,6 +335,7 @@
         margin: 4rem 2rem 5.5rem 4rem;
 
         h2 {
+            text-transform:uppercase;
             font-size:4rem;
             color:#fff;
             font-weight:$semibold-font-weight;
