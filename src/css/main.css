@@ -731,6 +731,7 @@ footer .footer-info .newsletter-group .copyright .links {
   font-weight: 400;
 }
 .form-container form .message-box {
+  resize: none;
   border-radius: 2px;
   border: solid 1px #707070;
   width: 100%;
