@@ -102,3 +102,24 @@
     color:$dark-blue;
 }
 
+
+
+
+@media only screen and (max-width: 1200px) {
+    .newsletter-button {
+
+        width: auto;
+        height: 2.8rem;
+        padding: 0 10px;
+        font-weight: $medium-font-weight;
+        font-family: $main-font-family;
+        text-transform: uppercase;
+        border: none;
+        color: #fff;
+        background-color: $light-coral;
+
+        transition: color 0.1s linear;
+
+    }
+}
+

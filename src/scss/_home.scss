@@ -10,6 +10,7 @@
     background-position: 11.5vw 50%;
     background-repeat: no-repeat;
     padding-top: 13vh;
+    padding-bottom: 5rem;;
     min-height: 100vh;
     position: relative;
 }
@@ -406,6 +407,8 @@
 .form-container {
 
     max-width:50%;
+    min-width:600px;
+    
     margin:0 auto;
     form {
 
@@ -461,98 +464,6 @@
 }
 
 
-//FOOTER SECTION 
-
-footer {
-    display:flex;
-    background-color:#fff;
-
-    .footer-logo {
-        flex: 0 0 20%;
-        img {
-            margin:auto;
-            display:block;
-            height:80%;
-            padding-top:0.5rem;
-        }
-    }
-
-    .footer-info {
-        flex: 0 0 80%;
-        background:$dark-blue;
-        padding:1rem 2rem 1rem 8rem;
-        display:flex;
-        justify-content: space-evenly;
-        clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-
-        .contact-info {
-            margin-right:1rem;
-            display:flex;
-            flex-direction: column;
-            justify-content:space-between;
-
-            h2 {
-                color:$light-coral;
-                font-weight:$medium-font-weight;
-                text-transform: uppercase;
-                font-size:1.4rem;
-            }
-            p {
-                text-transform:uppercase;
-                 color:#fff;
-                 line-height:120%;
-            }
-
-            .social-icons {
-                img {
-                    margin-right:1rem;
-                }
-            }
-
-        }
-
-
-        .newsletter-group {
-            display:flex;
-            flex-direction: column;
-            justify-content:space-between;
-            h2 {
-                 color:$light-coral;
-                 font-weight:$medium-font-weight;
-                 text-transform: uppercase;
-                 font-size:1.4rem;
-               
-            }
-
-            form {
-                input {
-                    height:2.8rem;
-                    border-radius:0;
-                    border:none;
-                    width:50%;
-                    display:inline-block;
-                }
-
-            
-            }
-
-            .copyright {
-                display:flex;
-                p {
-                    color:#fff;
-                    display:inline-block;
-                    line-height:100%;
-                    font-size:0.8rem;
-                }
-
-                .links {
-                    margin-right: 10px;
-                }
-            }
-        }
-    }
-
-}
 
 
 

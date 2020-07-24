@@ -1,0 +1,76 @@
+
+
+
+@media only screen and (max-width:1200px) {
+    .hero-content {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .engage-card-container {
+        width: 100%;
+    }
+
+
+    .meeting-content {
+        .meeting-text {
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+
+    //FORM 
+    .form-intro {
+        p {
+            min-width:600px;
+        }
+    }
+
+
+
+
+
+    footer {
+
+
+        .contact-info {
+            h2 {
+                text-align:center;
+            }
+
+            .details {
+                text-align:center;
+            }
+
+            
+        }
+        .footer-info {
+
+
+
+            .newsletter-group {
+                text-align:center;
+
+                .copyright {
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    .links {
+                        margin-bottom:5px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}

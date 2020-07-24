@@ -7,7 +7,7 @@ header {
     height: 13vh;
     z-index: 10;
     width: 100%;
-    padding: 1rem 0;
+    padding: 3rem 0;
 
     .header-container {
         display: flex;
@@ -18,15 +18,36 @@ header {
     }
 
     .nav-list {
+
+
         ul {
             list-style: none;
             display: inline-block;
+        
 
             li {
                 margin-right: 1.5rem;
                 display: inline-block;
                 color:#fff;
                 font-size: $header-font-size;
+                position:relative;
+                overflow:hidden;
+                vertical-align:middle;
+                
+                hr {
+                    position:absolute;
+                    color:#fff;
+                    width:100%;
+                    border: solid 1px #fff;  
+                    bottom:0;
+                    right:100%;
+                    transition: all 0.1s linear
+                }
+
+            }
+
+            li:hover > hr {
+                right:0%;
             }
 
             

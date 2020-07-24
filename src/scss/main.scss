@@ -10,9 +10,6 @@
 
 //Components
 @import 'buttons';
-
-
-
 @import 'animations';
 
 
@@ -21,6 +18,7 @@
 //Import main components
 @import 'globals';
 @import 'header';
+@import 'footer';
 @import 'home';
 
 
@@ -30,7 +28,7 @@
 
 
 //Meida Queries
-@import './media-queries/1100px-media-queries';
+@import './media-queries/1200px-media-queries';
 
 
 
