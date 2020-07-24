@@ -357,8 +357,8 @@ footer .footer-info .newsletter-group .copyright .links {
   background-position: 11.5vw 50%;
   background-repeat: no-repeat;
   padding-top: 13vh;
-  padding-bottom: 2rem;
   min-height: 100vh;
+  max-height: 100vh;
   position: relative;
 }
 
