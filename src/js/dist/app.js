@@ -298,22 +298,27 @@ var previousButtonHandler = function previousButtonHandler() {
 
 
 var overlappingImage = document.querySelector('.overlapping-image');
-var screenWidth = window.innerWidth;
+var screenWidth = window.innerWidth; //Landscape detector 
+
+var isLandscape = window.matchMedia("(orientation: landscape)").matches;
 
 var overlapListener = function overlapListener() {
   window.addEventListener('resize', function () {
     screenWidth = window.innerWidth;
+    screenHeight = window.innerHeight;
+
+    if (isLandscape) {
+      overlappingImage.style.margin = 0;
+    }
   });
   document.addEventListener('scroll', function (event) {
-    console.log(window.scrollY);
-
-    if (window.scrollY > 73 && screenWidth > 700) {
+    if (window.scrollY > 73 && screenWidth > 700 && !isLandscape) {
       gsap.to('.overlapping-image', {
         duration: 0.25,
         marginTop: -32,
         marginBottom: -32
       });
-    } else if (window.scrollY < 73 && screenWidth > 700) {
+    } else if (window.scrollY < 73 && screenWidth > 700 && !isLandscape) {
       gsap.to('.overlapping-image', {
         duration: 0.25,
         marginTop: 0,

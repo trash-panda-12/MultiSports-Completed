@@ -436,19 +436,28 @@ let previousButtonHandler = function() {
 let overlappingImage = document.querySelector('.overlapping-image');
 let screenWidth = window.innerWidth;
 
+//Landscape detector 
+let isLandscape = window.matchMedia("(orientation: landscape)").matches;
+
 
 
 let overlapListener = function() {
     window.addEventListener('resize', function(){
         screenWidth = window.innerWidth;
+        screenHeight = window.innerHeight;
+        
+
+        if(isLandscape) {
+            overlappingImage.style.margin = 0;
+        }
+
+        
                 
     })
     document.addEventListener('scroll', function(event){
-
-        console.log(window.scrollY)
-        if(window.scrollY > 73 && screenWidth > 700) {
+        if(window.scrollY > 73 && screenWidth > 700 && !isLandscape) {
             gsap.to('.overlapping-image', {duration:0.25, marginTop:-32,marginBottom:-32})
-        }else if (window.scrollY < 73 && screenWidth > 700) {
+        }else if (window.scrollY < 73 && screenWidth > 700 && !isLandscape) {
              gsap.to('.overlapping-image', {duration:0.25, marginTop:0,marginBottom:0})
         }
 
