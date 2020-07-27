@@ -267,7 +267,7 @@ footer .footer-info .contact-info p {
 }
 footer .footer-info .contact-info .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 footer .footer-info .contact-info .social-icons img {
   margin-right: 0;
