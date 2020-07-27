@@ -289,4 +289,28 @@ document.querySelector('.previous').addEventListener('click', function () {
       opacity: 1
     });
   }, 150);
-});
+}); //Handles the Overlapping Image movement from on screen
+
+var overlappingImage = document.querySelector('.overlapping-image');
+
+var overlapListener = function overlapListener() {
+  document.addEventListener('scroll', function (event) {
+    console.log(window.scrollY);
+
+    if (window.scrollY > 73) {
+      gsap.to('.overlapping-image', {
+        duration: 0.25,
+        marginTop: -32,
+        marginBottom: -32
+      });
+    } else if (window.scrollY < 73) {
+      gsap.to('.overlapping-image', {
+        duration: 0.25,
+        marginTop: 0,
+        marginBottom: 0
+      });
+    }
+  });
+};
+
+overlapListener();

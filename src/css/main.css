@@ -420,10 +420,8 @@ footer .footer-info .newsletter-group .copyright .links {
 }
 .footballing-flex .overlapping-image {
   flex: 0 0 50%;
-  margin-top: -1.2rem;
   position: relative;
   z-index: 9;
-  margin-bottom: -1.2rem;
 }
 .footballing-flex .overlapping-image img {
   max-width: 100%;
