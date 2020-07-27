@@ -88,9 +88,11 @@
     .overlapping-image {
      
         flex: 0 0 50%;
+        //This was replaced by GSAP animations.
         // margin-top: -1.2rem;
         position: relative;
         z-index: 9;
+        //This was replaced by GSAP animations.
         // margin-bottom: -1.2rem;
 
         img {

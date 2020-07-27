@@ -292,18 +292,19 @@ document.querySelector('.previous').addEventListener('click', function () {
 }); //Handles the Overlapping Image movement from on screen
 
 var overlappingImage = document.querySelector('.overlapping-image');
+var screenWidth = window.innerWidth;
 
 var overlapListener = function overlapListener() {
   document.addEventListener('scroll', function (event) {
     console.log(window.scrollY);
 
-    if (window.scrollY > 73) {
+    if (window.scrollY > 73 && screenWidth > 700) {
       gsap.to('.overlapping-image', {
         duration: 0.25,
         marginTop: -32,
         marginBottom: -32
       });
-    } else if (window.scrollY < 73) {
+    } else if (window.scrollY < 73 && screenWidth > 700) {
       gsap.to('.overlapping-image', {
         duration: 0.25,
         marginTop: 0,
