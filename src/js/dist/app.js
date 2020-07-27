@@ -298,7 +298,8 @@ var previousButtonHandler = function previousButtonHandler() {
 
 
 var overlappingImage = document.querySelector('.overlapping-image');
-var screenWidth = window.innerWidth; //Landscape detector 
+var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight; //Landscape detector 
 
 var isLandscape = window.matchMedia("(orientation: landscape)").matches;
 
@@ -312,13 +313,13 @@ var overlapListener = function overlapListener() {
     }
   });
   document.addEventListener('scroll', function (event) {
-    if (window.scrollY > 73 && screenWidth > 700 && !isLandscape) {
+    if (window.scrollY > 73 && screenWidth > 700 && screenHeight > 500) {
       gsap.to('.overlapping-image', {
         duration: 0.25,
         marginTop: -32,
         marginBottom: -32
       });
-    } else if (window.scrollY < 73 && screenWidth > 700 && !isLandscape) {
+    } else if (window.scrollY < 73 && screenWidth > 700 && screenHeight > 500) {
       gsap.to('.overlapping-image', {
         duration: 0.25,
         marginTop: 0,
